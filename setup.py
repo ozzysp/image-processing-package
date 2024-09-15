@@ -7,7 +7,7 @@ with open("requirements.txt") as f:
     requirements = f.read().splitlines()
 
 setup(
-    name="image_processing",
+    name="ozzy_image_processing",
     version="0.0.1",
     author="ozzy_azevedo",
     author_email="",
@@ -19,4 +19,3 @@ setup(
     install_requires=requirements,
     python_requires='>=3.8',
 )
-

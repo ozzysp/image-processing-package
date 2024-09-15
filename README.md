@@ -22,7 +22,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install ozzy_im
 
 ```bash
 	pip install ozzy_image_processing
-```
+``
 
 
 ## Author

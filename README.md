@@ -1,7 +1,7 @@
 # image_processing
 
 Description. 
-# The package package_name is used to:
+# The package processing_image is used to:
 		Processing:
 			- Histogram matching
 			- Structural similarity

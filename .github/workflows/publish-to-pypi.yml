@@ -1,3 +1,10 @@
+
+### 3. **Arquivo `publish-to-pypi.yml`**:
+Este arquivo está configurado corretamente para o GitHub Actions, mas há uma pequena omissão no bloco de código de instalação das dependências. Você precisa corrigir o final para garantir que ele checa a existência do arquivo `requirements.txt`.
+
+Aqui está a versão corrigida:
+
+```yaml
 name: Publish Python Package
 
 on:
@@ -23,8 +30,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; 
-
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Build package
       run: |
@@ -41,4 +47,3 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.TEST_PYPI_PASSWORD }}
       run: |
         twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-

@@ -2,8 +2,6 @@
 ### 3. **Arquivo `publish-to-pypi.yml`**:
 Este arquivo está configurado corretamente para o GitHub Actions, mas há uma pequena omissão no bloco de código de instalação das dependências. Você precisa corrigir o final para garantir que ele checa a existência do arquivo `requirements.txt`.
 
-Aqui está a versão corrigida:
-
 ```yaml
 name: Publish Python Package
 
